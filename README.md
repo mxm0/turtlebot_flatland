@@ -7,5 +7,3 @@ Check out [flatland](https://github.com/avidbots/flatland) and turtlebot_flatlan
 ~~~~
 roslaunch turtlebot_flatland turtlebot_in_flatland.launch
 ~~~~
-
-Then use rviz to set a navigation goal.

@@ -77,23 +77,11 @@ plugins:
     body: laser_mount
     broadcast_tf: false
     origin: [0, 0, 0]
-    range: 20
-    angle: {min: -2.356194490192345, max: 2.356194490192345, increment: 0.04363323129985824}
+    range: 60
+    angle: {min: -2.356194490192345, max: 2.356194490192345, increment: 0.00436332309619}
     noise_std_dev: 0.01
     update_rate: 40
     layers: ["2d"]
-  - type: Laser
-    name: laser_3d
-    frame: laser_mount
-    topic: scan_3d
-    body: laser_mount
-    broadcast_tf: false
-    origin: [0, 0, 0]
-    range: 3
-    angle: {min: -0.61, max: 0.61, increment: 0.05}
-    noise_std_dev: 0.04
-    update_rate: 10
-    layers: ["2d", "3d"]
 
   - type: ModelTfPublisher
     name: tf_publisher
