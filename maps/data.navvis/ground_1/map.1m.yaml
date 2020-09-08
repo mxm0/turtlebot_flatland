@@ -1,5 +1,5 @@
-image: map.2cm.pgm
-resolution: 0.020000
+image: map.1m.png
+resolution: 1.000000
 origin: [-130.140560, -111.720563, 0.000000]
 negate: 0
 occupied_thresh: 0.65
