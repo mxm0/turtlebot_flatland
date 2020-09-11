@@ -8,13 +8,13 @@ bodies:  # List of named bodies
     footprints:
       - type: polygon  # wheel
         sensor: true
-        points: [[-.06025, -.2], [-.06025, -.15], [.06025, -.15], [.06025, -.2]]
+        points: [[-.06025, -.1], [-.06025, -.05], [.06025, -.05], [.06025, -.1]]
         density: 1
         layers: []
 
       - type: polygon  # wheel
         sensor: true
-        points: [[-.06025, .2], [-.06025, .15], [.06025, .15], [.06025, .2]]
+        points: [[-.06025, .1], [-.06025, .05], [.06025, .05], [.06025, .1]]
         density: 1
         layers: []
 
@@ -34,7 +34,7 @@ bodies:  # List of named bodies
     color: [0,0,1,1.0]
     footprints:
       - type: circle
-        radius: 0.2552
+        radius: 0.1
         center: [0, 0]
         density: 1
         layers: ["all"]
