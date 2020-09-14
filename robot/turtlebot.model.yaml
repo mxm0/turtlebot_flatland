@@ -8,13 +8,13 @@ bodies:  # List of named bodies
     footprints:
       - type: polygon  # wheel
         sensor: true
-        points: [[-.06025, -.1], [-.06025, -.05], [.06025, -.05], [.06025, -.1]]
+        points: [[-.06025, -.05], [-.06025, 0], [.06025, 0], [.06025, -.05]]
         density: 1
         layers: []
 
       - type: polygon  # wheel
         sensor: true
-        points: [[-.06025, .1], [-.06025, .05], [.06025, .05], [.06025, .1]]
+        points: [[-.06025, .05], [-.06025, .0], [.06025, .0], [.06025, .05]]
         density: 1
         layers: []
 
