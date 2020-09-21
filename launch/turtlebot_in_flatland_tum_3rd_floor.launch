@@ -111,6 +111,7 @@
     <param name="move_base/base_global_planner" value="global_planner/GlobalPlanner"/>
     <param name="move_base/global_costmap/robot_radius" value="0.1"/>
     <param name="move_base/local_costmap/robot_radius" value="0.1"/>
+    <param name="move_base/GlobalPlanner/allow_unknown" value="false"/>
 
 
 
@@ -161,5 +162,8 @@
 
     <remap from="scan"                      to="$(arg laser_topic)"/>
   </node>
+
+  <!--  **************** Visualisation ****************  -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find turtlebot_flatland)/rviz/robot_navigation.rviz"/>
 
 </launch>

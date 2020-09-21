@@ -108,6 +108,9 @@
     <param name="move_base/local_costmap/obstacle_layer/scan/max_obstacle_height" value="$(arg max_obstacle_height)"/>
     <param name="move_base/global_costmap/obstacle_layer/scan/min_obstacle_height" value="$(arg min_obstacle_height)"/>
     <param name="move_base/global_costmap/obstacle_layer/scan/max_obstacle_height" value="$(arg max_obstacle_height)"/>
+    <param name="move_base/global_costmap/robot_radius" value="0.1"/>
+    <param name="move_base/local_costmap/robot_radius" value="0.1"/>
+    <param name="move_base/GlobalPlanner/allow_unknown" value="false"/>
 
 
   <!--  ************** AMCL ************** -->
@@ -157,5 +160,8 @@
 
     <remap from="scan"                      to="$(arg laser_topic)"/>
   </node>
+
+  <!--  **************** Visualisation ****************  -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find turtlebot_flatland)/rviz/robot_navigation.rviz"/>
 
 </launch>
